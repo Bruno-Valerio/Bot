@@ -1,0 +1,38 @@
+Bot para seguir pessoas no instagram
+
+// jarvis
+
+let contador = 0;
+let arr = document.querySelectorAll('nomeDaClassDoButtonSeguir');
+arr.forEach((v, i) => {
+    setTimeout(() => {
+        if(!v.classList.contains('nomeDaClassDoButtonSeguindo')){
+            v.click();
+            contador++;
+            console.log('Jarvis ja seguiu '+contador+' pessoas');
+        } else {
+            console.log('Você ja segue este usuario');
+        }
+    }, i * 10000 )
+});
+
+
+
+Bot para deixar de seguir pessoas no instagram
+
+// jarvis
+
+let contador = 0;
+let arr = document.querySelectorAll('nomeDaClassDoButtonSeguindo').forEach((item, index) => {
+    setTimeout(() => {
+        if(item.innerText == 'Seguindo') {
+            item.click();
+            document.querySelectorAll('nomeDaClassDoButtonDeixarDeSeguir').forEach((item, index) => {
+            	if(item.innerText == 'Deixar de seguir'){
+        			item.click();
+            		contador++;
+				console.log('Você deixou de seguir '+contador+' pessoas')
+       		 }
+		})
+    }, i * 10000 )
+});
