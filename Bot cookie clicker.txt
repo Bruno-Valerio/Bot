@@ -1,0 +1,22 @@
+Boludo = {
+	start: function() {
+		this.clickInterval = setInterval(function(){
+			document.getElementById("bigCookie").click();
+		}, 1);
+
+		this.goldInterval = setInterval(function(){
+			var bigato = document.getElementsByClassName("bigato")[0];
+			if (bigato) {
+				bigato.click();
+			}
+		}, 1);
+	},
+	stop: function() {
+		clearInterval(this.clickInterval);
+		clearInterval(this.goldInterval);
+	}
+};
+
+Boludo.start();
+
+Boludo.stop();
