@@ -1,22 +1,28 @@
-Boludo = {
-	start: function() {
-		this.clickInterval = setInterval(function(){
-			document.getElementById("bigCookie").click();
-		}, 1);
+bot = setInterval(function(){
+    document.getElementById('bigCookie').click();
+    document.getElementById('upgrade0').click();
+    document.getElementById('shimmers').click();
+    document.getElementById('product0').click();
+    document.getElementById('product1').click();
+    document.getElementById('product2').click();
+    document.getElementById('product3').click();
+    document.getElementById('product4').click();
+    document.getElementById('product5').click();
+    document.getElementById('product6').click();
+    document.getElementById('product7').click();
+    document.getElementById('product8').click();
+    document.getElementById('product9').click();
+    document.getElementById('product10').click();
+    document.getElementById('product11').click();
+    document.getElementById('product12').click();
+    document.getElementById('product13').click();
+    document.getElementById('product14').click();
+    document.getElementById('product15').click();
+    document.getElementById('product16').click();
+    document.getElementById('product17').click();
+    document.getElementById('product18').click();
+});
 
-		this.goldInterval = setInterval(function(){
-			var bigato = document.getElementsByClassName("bigato")[0];
-			if (bigato) {
-				bigato.click();
-			}
-		}, 1);
-	},
-	stop: function() {
-		clearInterval(this.clickInterval);
-		clearInterval(this.goldInterval);
-	}
-};
+parar bot:
 
-Boludo.start();
-
-Boludo.stop();
+clearInterval(bot);
