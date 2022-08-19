@@ -1,7 +1,7 @@
 bot = setInterval(function(){
     document.getElementById('bigCookie').click();
     document.getElementById('upgrade0').click();
-    document.getElementById('shimmers').click();
+
     document.getElementById('product0').click();
     document.getElementById('product1').click();
     document.getElementById('product2').click();
@@ -21,7 +21,12 @@ bot = setInterval(function(){
     document.getElementById('product16').click();
     document.getElementById('product17').click();
     document.getElementById('product18').click();
-});
+
+    shimmer = document.querySelector('.shimmer');
+    if(shimmer){
+        document.querySelector('.shimmer').click();
+    }
+}); 
 
 parar bot:
 
