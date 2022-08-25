@@ -1,9 +1,11 @@
 bot = setInterval(function(){
+    let base = 100
+
     document.getElementById('bigCookie').click();
 
-    upgrade = document.getElementById('upgrade0');
+    upgrade = document.getElementById('upgrade9');
     if(upgrade){
-        document.getElementById('upgrade0').click();
+        document.getElementById('upgrade9').click();
     }
 
     shimmer = document.querySelector('.shimmer');
@@ -11,102 +13,106 @@ bot = setInterval(function(){
         document.querySelector('.shimmer').click();
     }
 
+    close = document.querySelector('.close');
+    if(close){
+        document.querySelector('.close').click();
+    }
+
     cursor = document.getElementById('productOwned0').innerHTML;
-    if(cursor < 100){
+    if(cursor < base){
         document.getElementById('product0').click();
     }
     
     vovo = document.getElementById('productOwned1').innerHTML;
-    if(vovo < 90){
+    if(vovo < base - 10){
         document.getElementById('product1').click();
     }
 
     fazenda = document.getElementById('productOwned2').innerHTML;
-    if(fazenda < 80){
+    if(fazenda < base -20){
         document.getElementById('product2').click();
     }
 
     mina = document.getElementById('productOwned3').innerHTML;
-    if(mina < 70){
+    if(mina < base - 30){
         document.getElementById('product3').click();
     }
 
     fabrica = document.getElementById('productOwned4').innerHTML;
-    if(fabrica < 60){
+    if(fabrica < base - 40){
         document.getElementById('product4').click();
     }
     
     banco = document.getElementById('productOwned5').innerHTML;
-    if(banco < 50){
+    if(banco < base - 50){
         document.getElementById('product5').click();
     }
 
     templo = document.getElementById('productOwned6').innerHTML;
-    if(templo < 40){
+    if(templo < base - 60){
         document.getElementById('product6').click();
     }
 
     torre = document.getElementById('productOwned7').innerHTML;
-    if(torre < 30){
+    if(torre < base - 70){
         document.getElementById('product7').click();
     }
 
     carregamento = document.getElementById('productOwned8').innerHTML;
-    if(carregamento < 20){
+    if(carregamento < base - 80){
         document.getElementById('product8').click();
     };
     
     laboratorio = document.getElementById('productOwned9').innerHTML;
-    if(laboratorio < 10){
+    if(laboratorio < base - 90){
         document.getElementById('product9').click();
     };
 
     portal = document.getElementById('productOwned10').innerHTML;
-    if(portal < 10){
+    if(portal < base - 100){
         document.getElementById('product10').click();
     };
 
     maquina = document.getElementById('productOwned11').innerHTML;
-    if(maquina < 10){
+    if(maquina < base - 110){
         document.getElementById('product11').click();
     };
     
     condensador = document.getElementById('productOwned12').innerHTML;
-    if(condensador < 10){
+    if(condensador < base - 120){
         document.getElementById('product12').click();
     };
 
     prisma = document.getElementById('productOwned13').innerHTML;
-    if(prisma < 10){
+    if(prisma < base - 130){
         document.getElementById('product13').click();
     };
 
     criador = document.getElementById('productOwned14').innerHTML;
-    if(criador < 10){
+    if(criador < base - 140){
         document.getElementById('product14').click();
     };
 
     motor = document.getElementById('productOwned15').innerHTML;
-    if(motor < 10){
+    if(motor < base - 150){
         document.getElementById('product15').click();
     };
     
     consoleJS = document.getElementById('productOwned16').innerHTML;
-    if(consoleJS < 10){
+    if(consoleJS < base - 160){
         document.getElementById('product16').click();
     };
 
     ocioverso = document.getElementById('productOwned17').innerHTML;
-    if(ocioverso < 10){
+    if(ocioverso < base - 170){
         document.getElementById('product17').click();
     };
     
     confeiteiro = document.getElementById('productOwned18').innerHTML;
-    if(confeiteiro < 10){
+    if(confeiteiro < base - 180){
         document.getElementById('product18').click();
     };
 }); 
 
-parar bot:
-
-clearInterval(bot);
+    ocioverso = document.getElementById('productOwned17').innerHTML;
+    if(ocioverso < base - 17
